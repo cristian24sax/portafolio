@@ -1,10 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import Socials from "./Socials";
+import { useRouter } from "next/router";
 
 const Header = () => {
+  const router = useRouter();
+  console.log("aq", router);
   return (
-    <header className="relative bg-gradient-to-r from-primary via-black/30 to-black/20 z-30 w-full flex items-center px-16 xl:px-60 xl:h-[90px]">
+    <header
+      className={`${
+        router.pathname === "/"
+          ? "bg-gradient-to-r from-primary via-black/30 to-black/20"
+          : "bg-primary/30"
+      } relative  z-30 w-full flex items-center px-16 xl:px-60 xl:h-[90px]`}
+    >
       <div className="container max-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-2 py-6">
           <Link href={"/"}>

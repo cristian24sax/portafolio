@@ -98,7 +98,7 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className=" h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className=" h-full bg-primary/30 pb-32 pt-4 text-center xl:text-left">
       <Circles />
       <motion.div
         variants={fadeIn("rigth", 0.2)}
