@@ -35,7 +35,7 @@ const Home = () => {
             commodo. Sunt eu dolor officia pariatur sint anim ipsum non eiusmod
             laborum occaecat qui do.
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-50">
             <ProjectsBtn />
           </div>
           <motion.div
