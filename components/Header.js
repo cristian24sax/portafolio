@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 const Header = () => {
   return (
-    <header className="absolute z-30 w-full flex items-center px-16 xl:px-60 xl:h-[90px]">
+    <header className="relative bg-gradient-to-r from-primary via-black/30 to-black/20 z-30 w-full flex items-center px-16 xl:px-60 xl:h-[90px]">
       <div className="container max-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-2 py-6">
           <Link href={"/"}>
