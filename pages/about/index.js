@@ -32,7 +32,6 @@ const aboutData = [
           <FaJs key="js" />,
           <FaReact key="react" />,
           <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
           <FaWordpress key="wordpress" />,
         ],
       },
@@ -40,22 +39,7 @@ const aboutData = [
         title: "UI/UX Design",
         icons: [
           <FaFigma key="figma" />,
-          <SiAdobexd key="adobe" />,
-          <SiAdobephotoshop key="photoshop" />,
         ],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
       },
     ],
   },
@@ -105,33 +89,23 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[180px]"
       >
         <Avatar />
       </motion.div>
       <div className=" container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className=" flex-1 flex flex-col justify-center">
-          <h2 className="h2">
-            captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+          <h2 className="h2 ">
+            Apasionado por el <br/>
+            <span className="text-accent"> {`< código />`} </span>, impulsando
+            ideas a través de la tecnología.
           </h2>
           <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
             10 years ago, I began freelancing as a developer. Since then, Ive
             donde remote wor for agencies, consulted for startups, and
             collaborated on digital products for business and consumers use.
           </p>
-          <div>
-            <div>
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                {/* <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />+
-                </div> */}
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] xl:max-w-[100px] mb-4 flex items-center justify-center">
-                  Years de Experience
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
 
         <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">

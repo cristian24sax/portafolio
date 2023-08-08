@@ -5,12 +5,11 @@ import { useRouter } from "next/router";
 
 const Header = () => {
   const router = useRouter();
-  console.log("aq", router);
   return (
     <header
       className={`${
         router.pathname === "/"
-          ? "bg-gradient-to-r from-primary via-black/30 to-black/20"
+          ? "bg-gradient-to-r from-primary via-black/40 to-black/30"
           : "bg-primary/30"
       } relative  z-30 w-full flex items-center px-16 xl:px-60 xl:h-[90px]`}
     >

@@ -5,9 +5,9 @@ import Avatar from "../components/Avatar";
 import ParticlesContainer from "../components/ParticlesContainer";
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full ">
+    <div className="bg-primary/60 h-[80%] xl:h-full ">
       <div className="w-full h-full bg-gradient-to-r from-primary via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col justify-start lg:justify-center xl:pt-0 xl:text-left h-[100%] lg:h-full xl:h-[92%] container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.1)}
             initial="hidden"
@@ -15,7 +15,7 @@ const Home = () => {
             exit="hidden"
             className="h1 flex flex-col xl:flex-row"
           >
-            Cristian  
+            Cristian
             <span className="text-accent xl:ml-6">Quispe</span>
           </motion.h1>
 
@@ -24,15 +24,15 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-[15.5px]"
           >
-            Non deserunt Lorem ut commodo ea proident amet ullamco consequat
-            cillum voluptate culpa. Mollit ea minim labore mollit occaecat sunt
-            cillum esse veniam sint ipsum ea veniam culpa. Voluptate velit Lorem
-            velit ipsum reprehenderit esse occaecat incididunt minim consequat.
-            Consequat cupidatat nisi commodo officia sunt nulla deserunt non
-            commodo. Sunt eu dolor officia pariatur sint anim ipsum non eiusmod
-            laborum occaecat qui do.
+            ¡Bienvenido a mi rincón digital! Soy un apasionado desarrollador
+            <br/>
+            <span className="text-accent text-[20px]"> full stack</span> con un recorrido de
+            más de un año en el emocionante mundo de la tecnología. Mi
+            trayectoria no solo abarca líneas de código, sino también soluciones
+            creativas y eficientes que transforman ideas en realidades
+            digitales.
           </motion.p>
           <div className="flex justify-center xl:hidden relative z-50">
             <ProjectsBtn />
@@ -57,7 +57,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className=" w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:-bottom-[20%] lg:right-[0%]"
+          className=" w-full h-full max-w-[737px] max-h-[678px] lg:max-w-[560px] absolute -bottom-32 lg:-bottom-[40%]  lg:right-[0%]"
         >
           <Avatar />
         </motion.div>
