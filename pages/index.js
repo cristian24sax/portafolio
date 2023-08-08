@@ -13,7 +13,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 flex flex-col xl:flex-row"
+            className="h1 "
           >
             Cristian
             <span className="text-accent xl:ml-6">Quispe</span>
@@ -24,7 +24,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-[15.5px]"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 "
           >
             ¡Bienvenido a mi rincón digital! Soy un apasionado desarrollador
             <br/>
@@ -57,8 +57,9 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className=" w-full h-full max-w-[737px] max-h-[678px] lg:max-w-[560px] absolute -bottom-32 lg:-bottom-[40%]  lg:right-[0%]"
-        >
+          className=" absolute bottom-0 right-[5%] w-[50%] "
+          >
+          {/* // w-full h-full max-w-[737px] max-h-[678px] lg:max-w-[560px] xl:max-w-[600px] absolute -bottom-32 lg:-bottom-[40%] xl:-bottom-[27%] lg:right-[0%] xl:right-[7%] */}
           <Avatar />
         </motion.div>
       </div>
